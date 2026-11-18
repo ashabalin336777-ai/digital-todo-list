@@ -1,34 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Список задач</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main class="card">
-      <header class="header">
-        <h1>Список задач</h1>
-        <p id="counter" class="counter" aria-live="polite">осталось 0 из 0</p>
-      </header>
-
-      <form id="form" class="form">
-        <label class="visually-hidden" for="task-input">Новая задача</label>
-        <input
-          id="task-input"
-          type="text"
-          name="task"
-          placeholder="Новая задача"
-          autocomplete="off"
-          maxlength="300"
-        >
-        <button type="submit">Добавить</button>
-      </form>
-
-      <p id="empty" class="empty">Задач пока нет</p>
-      <ul id="list" class="list"></ul>
-    </main>
-    <script src="app.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
